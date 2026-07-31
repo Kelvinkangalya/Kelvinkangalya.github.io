@@ -2,92 +2,144 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kelvin Wambua Kangalya | Economist | AI Data Analyst</title>
+    <title>Kelvin Wambua Kangalya | Economist | AI Data Analyst | Researcher</title>
 
     <meta name="description"
-        content="Official portfolio of Kelvin Wambua Kangalya - Economist, AI Data Analyst, Researcher and Software Developer.">
+        content="Official portfolio of Kelvin Wambua Kangalya, an Economist, AI Data Analyst, Researcher and Software Developer from Kenya.">
 
-    <!-- Google Fonts -->
+    <meta name="author" content="Kelvin Wambua Kangalya">
+
+    <!-- Google Font -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <!-- Custom CSS -->
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- =======================
+            NAVIGATION
+    ======================== -->
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <nav class="navbar navbar-expand-lg fixed-top">
 
         <div class="container">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
 
-                <!-- Logo goes here later -->
+                <img src="images/logo.png"
+                    alt="RSHOTS Logo"
+                    class="logo">
 
-                <strong>RSHOTS</strong>
+                <div class="brand-text">
+
+                    <h4>RSHOTS</h4>
+
+                    <small>Research • Reimagine • Results</small>
+
+                </div>
 
             </a>
 
             <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbar">
+                data-bs-target="#navbarNav">
 
                 <span class="navbar-toggler-icon"></span>
 
             </button>
 
             <div class="collapse navbar-collapse justify-content-end"
-                id="navbar">
+                id="navbarNav">
 
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
 
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active"
+                            href="#home">
+
+                            Home
+
+                        </a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link"
+                            href="#about">
+
+                            About
+
+                        </a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link"
+                            href="#skills">
+
+                            Skills
+
+                        </a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Research</a>
+                        <a class="nav-link"
+                            href="#projects">
+
+                            Projects
+
+                        </a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link"
+                            href="#research">
+
+                            Research
+
+                        </a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link"
+                            href="#contact">
+
+                            Contact
+
+                        </a>
 
                     </li>
 
@@ -99,9 +151,11 @@
 
     </nav>
 
-    <!-- ================= HERO ================= -->
+    <!-- =======================
+            HERO
+    ======================== -->
 
-    <section class="hero">
+    <section id="home" class="hero">
 
         <div class="container">
 
@@ -111,11 +165,11 @@
 
                 <div class="col-lg-6">
 
-                    <p class="hero-tagline">
+                    <span class="hero-badge">
 
                         RESEARCH • REIMAGINE • RESULTS
 
-                    </p>
+                    </span>
 
                     <h1>
 
@@ -129,26 +183,37 @@
 
                     </h2>
 
-                    <p class="hero-description">
+                    <p>
 
                         I combine economics, artificial intelligence,
-                        software engineering, and data analytics to develop
+                        software engineering and data analytics to build
                         practical, research-driven digital solutions for
-                        businesses, institutions, and communities.
+                        businesses, institutions and communities.
 
                     </p>
 
-                    <a href="#" class="btn btn-success btn-lg">
+                    <div class="hero-buttons">
 
-                        View Projects
+                        <a href="#projects"
+                            class="btn btn-success btn-lg">
 
-                    </a>
+                            <i class="bi bi-folder-fill"></i>
 
-                    <a href="#" class="btn btn-outline-dark btn-lg ms-3">
+                            View Projects
 
-                        Download Resume
+                        </a>
 
-                    </a>
+                        <a href="docs/Kelvin_Wambua_Kangalya_CV.pdf"
+                            class="btn btn-outline-dark btn-lg"
+                            target="_blank">
+
+                            <i class="bi bi-download"></i>
+
+                            Download Resume
+
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -156,9 +221,9 @@
 
                 <div class="col-lg-6 text-center">
 
-                    <img src="profile.jpg"
+                    <img src="images/profile.jpg"
                         alt="Kelvin Wambua Kangalya"
-                        class="img-fluid hero-image">
+                        class="hero-image img-fluid">
 
                 </div>
 
@@ -168,9 +233,27 @@
 
     </section>
 
+    <!-- =======================
+        PLACEHOLDER SECTIONS
+    ======================== -->
+
+    <section id="about"></section>
+
+    <section id="skills"></section>
+
+    <section id="projects"></section>
+
+    <section id="research"></section>
+
+    <section id="contact"></section>
+
     <!-- Bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
