@@ -1655,6 +1655,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+        #typing-text{
+
+    color:#009A44;
+
+    font-weight:700;
+
+    transition:opacity .3s ease-in-out;
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
