@@ -26,75 +26,70 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /*=====================================================
-        2. TYPING EFFECT
-    =====================================================*/
+    2. TYPING EFFECT
+=====================================================*/
 
-    const typingElement = document.getElementById("typing-text");
+const typingElement = document.getElementById("typing-text");
 
-    const professions = [
+const professions = [
+    "Economist",
+    "AI Data Analyst",
+    "Researcher",
+    "Software Developer"
+];
 
-        "Economist",
+let professionIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-        "AI Data Analyst",
+function typeEffect() {
 
-        "Researcher",
+    const current = professions[professionIndex];
 
-        "Software Developer"
+    if (!isDeleting) {
 
-    ];
+        typingElement.textContent = current.substring(0, charIndex + 1);
 
-    let professionIndex = 0;
-    let letterIndex = 0;
-    let deleting = false;
+        charIndex++;
 
-    function typeProfession() {
+        if (charIndex === current.length) {
 
-        const current = professions[professionIndex];
+            isDeleting = true;
 
-        if (!deleting) {
+            setTimeout(typeEffect, 1800);
 
-            typingElement.textContent = current.substring(0, letterIndex);
+            return;
 
-            letterIndex++;
+        }
 
-            if (letterIndex > current.length) {
+    } else {
 
-                deleting = true;
+        typingElement.textContent = current.substring(0, charIndex - 1);
 
-                setTimeout(typeProfession, 1800);
+        charIndex--;
 
-                return;
+        if (charIndex === 0) {
 
-            }
+            isDeleting = false;
 
-        } else {
+            professionIndex++;
 
-            typingElement.textContent = current.substring(0, letterIndex);
+            if (professionIndex >= professions.length) {
 
-            letterIndex--;
-
-            if (letterIndex < 0) {
-
-                deleting = false;
-
-                professionIndex++;
-
-                if (professionIndex >= professions.length) {
-
-                    professionIndex = 0;
-
-                }
+                professionIndex = 0;
 
             }
 
         }
 
-        setTimeout(typeProfession, deleting ? 45 : 90);
-
     }
 
-    typeProfession();
+    setTimeout(typeEffect, isDeleting ? 60 : 120);
 
+}
+
+typeEffect();
+    
     /*=====================================================
         3. SCROLL REVEAL
     =====================================================*/
