@@ -1178,7 +1178,225 @@ justify-content:center;
 }
 
 }
+/*=========================================================
+                    HERO V2
+=========================================================*/
 
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#ffffff,#f8fafc);
+
+    padding-top:120px;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    background:rgba(0,154,68,.1);
+
+    color:#009A44;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    letter-spacing:1px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:1.35rem;
+
+    color:#64748B;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:1.05rem;
+
+    color:#475569;
+
+    max-width:580px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:45px;
+
+}
+
+.hero-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h3{
+
+    color:#009A44;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+    color:#64748B;
+
+}
+
+.hero-image-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image{
+
+    width:420px;
+
+    max-width:100%;
+
+    border-radius:30px;
+
+    border:8px solid #fff;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+@media(max-width:991px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-image{
+
+    width:340px;
+
+    margin-top:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+    font-size:2.3rem;
+
+}
+
+.hero-stats{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
