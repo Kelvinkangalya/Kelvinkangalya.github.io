@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /*=====================================================
-    2. TYPING EFFECT
+    PROFESSIONS ROTATOR
 =====================================================*/
 
-const typingElement = document.getElementById("typing-text");
+const typingText = document.getElementById("typing-text");
 
 const professions = [
     "Economist",
@@ -38,57 +38,33 @@ const professions = [
     "Software Developer"
 ];
 
-let professionIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+let current = 0;
 
-function typeEffect() {
+function changeProfession() {
 
-    const current = professions[professionIndex];
+    typingText.style.opacity = 0;
 
-    if (!isDeleting) {
+    setTimeout(() => {
 
-        typingElement.textContent = current.substring(0, charIndex + 1);
+        typingText.textContent = professions[current];
 
-        charIndex++;
+        typingText.style.opacity = 1;
 
-        if (charIndex === current.length) {
+        current++;
 
-            isDeleting = true;
+        if(current >= professions.length){
 
-            setTimeout(typeEffect, 1800);
-
-            return;
+            current = 0;
 
         }
 
-    } else {
-
-        typingElement.textContent = current.substring(0, charIndex - 1);
-
-        charIndex--;
-
-        if (charIndex === 0) {
-
-            isDeleting = false;
-
-            professionIndex++;
-
-            if (professionIndex >= professions.length) {
-
-                professionIndex = 0;
-
-            }
-
-        }
-
-    }
-
-    setTimeout(typeEffect, isDeleting ? 60 : 120);
+    },300);
 
 }
 
-typeEffect();
+changeProfession();
+
+setInterval(changeProfession,2500);
     
     /*=====================================================
         3. SCROLL REVEAL
