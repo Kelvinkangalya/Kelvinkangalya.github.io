@@ -1665,16 +1665,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }
         /*====================================================
-            RESEARCH PAGE 2.0
+            RESEARCH PAGE
 ====================================================*/
 
 .research-hero{
 
-background:linear-gradient(135deg,#ffffff,#f5fff9);
+padding:180px 0 120px;
 
-position:relative;
+background:linear-gradient(135deg,#ffffff,#f5fff8);
 
 overflow:hidden;
+
+position:relative;
 
 }
 
@@ -1684,21 +1686,21 @@ content:"";
 
 position:absolute;
 
-width:500px;
+width:650px;
 
-height:500px;
+height:650px;
 
 background:rgba(0,154,68,.05);
 
 border-radius:50%;
 
-top:-150px;
+right:-220px;
 
-right:-150px;
+top:-220px;
 
 }
 
-.research-photo{
+.research-image{
 
 position:relative;
 
@@ -1706,39 +1708,31 @@ text-align:center;
 
 }
 
-.research-photo img{
-
-width:380px;
-
-border-radius:30px;
-
-box-shadow:0 25px 60px rgba(0,0,0,.15);
-
-}
-
-.research-badge{
+.research-status{
 
 position:absolute;
 
 bottom:20px;
 
-right:10px;
+left:50%;
+
+transform:translateX(-50%);
 
 background:#009A44;
 
 color:white;
 
-padding:12px 20px;
+padding:12px 28px;
 
 border-radius:40px;
 
 font-weight:600;
 
-box-shadow:0 10px 25px rgba(0,154,68,.3);
+box-shadow:0 10px 30px rgba(0,154,68,.3);
 
 }
 
-.research-stats{
+.research-overview{
 
 margin-top:-60px;
 
@@ -1748,57 +1742,65 @@ z-index:5;
 
 }
 
-.research-stats .stat-card{
+.overview-card{
 
 background:white;
 
-padding:40px 20px;
+padding:40px 30px;
 
 border-radius:25px;
 
 text-align:center;
 
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-transition:.35s;
+box-shadow:0 20px 45px rgba(0,0,0,.08);
 
 height:100%;
 
-}
-
-.research-stats .stat-card:hover{
-
-transform:translateY(-12px);
+transition:.35s;
 
 }
 
-.research-stats i{
+.overview-card:hover{
 
-font-size:2.4rem;
+transform:translateY(-10px);
+
+}
+
+.overview-card i{
+
+font-size:2.5rem;
 
 color:#009A44;
 
-margin-bottom:15px;
+margin-bottom:20px;
 
 }
 
-.research-stats h2{
+.overview-card h3{
 
 font-size:2.6rem;
 
 font-weight:800;
 
-margin-bottom:8px;
+margin-bottom:10px;
+
+color:#1E293B;
 
 }
 
-.research-stats p{
+.overview-card h5{
 
-margin:0;
+font-weight:700;
 
-font-weight:600;
+margin-bottom:15px;
+
+}
+
+.overview-card p{
 
 color:#64748B;
+
+margin:0;
 
 }
 /*=========================================================
