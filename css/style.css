@@ -2948,6 +2948,124 @@ padding:170px 0 110px;
 background:linear-gradient(135deg,#ffffff,#eefbf3);
 
 }
+        /*=========================================
+CONTACT INFORMATION
+=========================================*/
+
+.contact-info{
+
+padding:110px 0;
+
+background:#ffffff;
+
+}
+
+.contact-card{
+
+background:white;
+
+padding:45px 30px;
+
+text-align:center;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 25px 60px rgba(0,154,68,.18);
+
+}
+
+.contact-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+background:#eefbf3;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:.4s;
+
+}
+
+.contact-card:hover .contact-icon{
+
+background:#009A44;
+
+}
+
+.contact-icon i{
+
+font-size:2rem;
+
+color:#009A44;
+
+transition:.4s;
+
+}
+
+.contact-card:hover i{
+
+color:white;
+
+}
+
+.contact-card h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+color:#64748B;
+
+margin:0;
+
+word-break:break-word;
+
+}
+        .contact-card a{
+
+color:#009A44;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+color:#D71920;
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
