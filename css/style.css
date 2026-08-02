@@ -3066,6 +3066,113 @@ transition:.3s;
 color:#D71920;
 
 }
+        /*=========================================
+CONTACT SERVICES
+=========================================*/
+
+.contact-services{
+
+padding:110px 0;
+
+background:#f8fafc;
+
+}
+
+.service-contact-card{
+
+background:white;
+
+padding:40px 30px;
+
+border-radius:25px;
+
+text-align:center;
+
+height:100%;
+
+transition:.35s;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+border-top:5px solid transparent;
+
+}
+
+.service-contact-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#009A44;
+
+box-shadow:0 25px 60px rgba(0,154,68,.15);
+
+}
+
+.service-contact-icon{
+
+width:85px;
+
+height:85px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+border-radius:50%;
+
+background:#eefbf3;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:.35s;
+
+}
+
+.service-contact-card:hover .service-contact-icon{
+
+background:#009A44;
+
+transform:rotate(360deg);
+
+}
+
+.service-contact-icon i{
+
+font-size:2rem;
+
+color:#009A44;
+
+transition:.35s;
+
+}
+
+.service-contact-card:hover i{
+
+color:white;
+
+}
+
+.service-contact-card h4{
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.service-contact-card p{
+
+color:#64748B;
+
+line-height:1.8;
+
+margin:0;
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
