@@ -1795,6 +1795,105 @@ font-size:1rem;
 }
 
 }
+        /*=========================================
+RESEARCH SNAPSHOT
+=========================================*/
+
+.research-stats{
+
+padding:90px 0;
+
+background:white;
+
+}
+
+.research-stat-card{
+
+background:#fff;
+
+padding:40px 30px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+height:100%;
+
+border-top:5px solid transparent;
+
+}
+
+.research-stat-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#009A44;
+
+}
+
+.stat-icon{
+
+width:80px;
+
+height:80px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:#eefbf3;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin-bottom:25px;
+
+}
+
+.stat-icon i{
+
+font-size:2rem;
+
+color:#009A44;
+
+}
+
+.research-stat-card h3{
+
+font-size:2.8rem;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+color:#1E293B;
+
+}
+
+.research-stat-card h5{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.research-stat-card p{
+
+color:#64748B;
+
+margin:0;
+
+line-height:1.7;
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
