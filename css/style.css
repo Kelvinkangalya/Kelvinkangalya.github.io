@@ -2369,6 +2369,103 @@ line-height:1.8;
 margin:0;
 
 }
+        /*=========================================
+RESEARCH TOOLKIT
+=========================================*/
+
+.research-toolkit{
+
+padding:110px 0;
+
+background:white;
+
+}
+
+.tool-card{
+
+background:#fff;
+
+padding:40px 30px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+height:100%;
+
+border:1px solid #eef2f7;
+
+}
+
+.tool-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 30px 60px rgba(0,154,68,.18);
+
+}
+
+.tool-card i{
+
+font-size:3rem;
+
+color:#009A44;
+
+margin-bottom:25px;
+
+display:block;
+
+transition:.4s;
+
+}
+
+.tool-card:hover i{
+
+transform:scale(1.15);
+
+color:#D71920;
+
+}
+
+.tool-card h4{
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.tool-card p{
+
+color:#64748B;
+
+margin-bottom:25px;
+
+line-height:1.8;
+
+}
+
+.tool-level{
+
+display:inline-block;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+background:#eefbf3;
+
+color:#009A44;
+
+font-size:.85rem;
+
+font-weight:600;
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
