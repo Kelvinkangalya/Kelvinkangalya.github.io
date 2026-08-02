@@ -2466,6 +2466,302 @@ font-size:.85rem;
 font-weight:600;
 
 }
+        /*=========================================
+ACADEMIC PROFILES
+=========================================*/
+
+.academic-profiles{
+
+padding:110px 0;
+
+background:#f8fafc;
+
+}
+
+.profile-card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+height:100%;
+
+}
+
+.profile-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 25px 60px rgba(0,154,68,.15);
+
+}
+
+.profile-icon{
+
+width:95px;
+
+height:95px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+border-radius:50%;
+
+background:#eefbf3;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:.4s;
+
+}
+
+.profile-card:hover .profile-icon{
+
+background:#009A44;
+
+}
+
+.profile-icon i{
+
+font-size:2.5rem;
+
+color:#009A44;
+
+transition:.4s;
+
+}
+
+.profile-card:hover .profile-icon i{
+
+color:white;
+
+transform:scale(1.1);
+
+}
+
+.profile-card h3{
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.profile-card p{
+
+color:#64748B;
+
+margin-bottom:30px;
+
+line-height:1.8;
+
+}
+
+.profile-card .btn{
+
+padding:12px 28px;
+
+border-radius:30px;
+
+font-weight:600;
+
+}
+        /*=========================================
+RESEARCH COLLABORATION
+=========================================*/
+
+.research-collaboration{
+
+padding:120px 0;
+
+background:#ffffff;
+
+}
+
+.collaboration-card{
+
+background:linear-gradient(135deg,#009A44,#006d2f);
+
+border-radius:35px;
+
+padding:70px;
+
+color:white;
+
+overflow:hidden;
+
+position:relative;
+
+box-shadow:0 30px 70px rgba(0,154,68,.25);
+
+}
+
+.collaboration-card::before{
+
+content:"";
+
+position:absolute;
+
+width:350px;
+
+height:350px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+top:-120px;
+
+right:-120px;
+
+}
+
+.collaboration-badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+background:rgba(255,255,255,.15);
+
+border-radius:30px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+letter-spacing:1px;
+
+}
+
+.collaboration-card h2{
+
+font-size:2.5rem;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+.collaboration-card p{
+
+font-size:1.05rem;
+
+opacity:.95;
+
+line-height:1.8;
+
+}
+
+.collaboration-list{
+
+margin-top:35px;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+.collaboration-list div{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-weight:600;
+
+}
+
+.collaboration-list i{
+
+color:#FFD54F;
+
+font-size:1.2rem;
+
+}
+
+.collaboration-box{
+
+background:rgba(255,255,255,.12);
+
+padding:45px 30px;
+
+border-radius:25px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.collaboration-box i{
+
+font-size:4rem;
+
+margin-bottom:20px;
+
+}
+
+.collaboration-box h3{
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.collaboration-box .btn{
+
+margin-top:20px;
+
+border-radius:30px;
+
+padding:12px 30px;
+
+font-weight:700;
+
+color:#009A44;
+
+}
+
+@media(max-width:992px){
+
+.collaboration-card{
+
+padding:40px;
+
+}
+
+.collaboration-list{
+
+grid-template-columns:1fr;
+
+}
+
+.collaboration-box{
+
+margin-top:40px;
+
+}
+
+}
 /*=========================================================
             END OF STYLESHEET
 =========================================================*/
