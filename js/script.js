@@ -248,3 +248,22 @@ setInterval(changeProfession,2500);
     });
 
 });
+/*=========================================
+            BACK TO TOP BUTTON
+=========================================*/
+
+const backTop = document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+
+        backTop.classList.add("show");
+
+    }else{
+
+        backTop.classList.remove("show");
+
+    }
+
+});
