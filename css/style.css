@@ -3771,6 +3771,30 @@ padding:30px;
 
 }
 
+.contact-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:rgba(0,154,68,.10);
+
+    color:var(--primary);
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+}
+
 .contact-hero h1{
 
     margin-bottom:25px;
@@ -3783,49 +3807,37 @@ padding:30px;
 
     line-height:1.9;
 
-    max-width:600px;
+    color:#64748B;
 
-    color:var(--text);
+    max-width:620px;
 
 }
 
-.contact-tag{
+.contact-hero .hero-buttons{
 
-    display:inline-block;
+    margin-top:40px;
 
-    background:rgba(0,154,68,.10);
+    display:flex;
 
-    color:var(--primary);
+    gap:18px;
 
-    padding:10px 20px;
-
-    border-radius:50px;
-
-    font-size:.9rem;
-
-    font-weight:600;
-
-    margin-bottom:25px;
-
-    letter-spacing:1px;
-
-    text-transform:uppercase;
+    flex-wrap:wrap;
 
 }
 
 .contact-photo-card{
 
+    max-width:420px;
+
+    margin:auto;
+
     background:#fff;
 
-    border-radius:28px;
+    border-radius:30px;
 
     overflow:hidden;
 
     box-shadow:var(--shadow-lg);
-
-    max-width:420px;
-
-    margin:auto;
 
     transition:var(--transition);
 
@@ -3841,7 +3853,7 @@ padding:30px;
 
     width:100%;
 
-    height:500px;
+    height:520px;
 
     object-fit:cover;
 
@@ -3849,17 +3861,91 @@ padding:30px;
 
 }
 
-.contact-hero .hero-buttons{
 
-    margin-top:35px;
+/*=========================================
+        HOW I CAN HELP
+=========================================*/
+
+.contact-services{
+
+    padding:90px 0;
+
+    background:#F8FAFC;
+
+}
+
+.service-contact-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+    border:1px solid rgba(0,0,0,.05);
+
+    height:100%;
+
+}
+
+.service-contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.service-contact-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:22px;
+
+    background:rgba(0,154,68,.10);
+
+    color:var(--primary);
 
     display:flex;
 
-    gap:18px;
+    align-items:center;
 
-    flex-wrap:wrap;
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    font-size:2rem;
 
 }
+
+.service-contact-card h4{
+
+    margin-bottom:18px;
+
+}
+
+.service-contact-card p{
+
+    margin:0;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+
+/*=========================================
+            MOBILE
+=========================================*/
 
 @media(max-width:991px){
 
@@ -3905,325 +3991,314 @@ padding:100px 0 60px;
 
 }
 
+.contact-services{
+
+padding:70px 0;
+
+}
+
 .contact-photo{
 
 height:340px;
 
 }
 
+.service-contact-card{
+
+padding:30px 20px;
+
 }
 
-/*=========================================
-        CONTACT INFORMATION CARD
-=========================================*/
+}
+/*==================================================
+                CONTACT FORM
+====================================================*/
 
-.contact-card{
+.contact-form-section{
 
-    background:#fff;
+    padding:100px 0;
 
-    border-radius:28px;
+    background:#ffffff;
 
-    padding:35px;
+}
 
-    box-shadow:var(--shadow-sm);
+.contact-form-card{
+
+    background:#ffffff;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-lg);
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+.contact-form-card label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+.contact-form-card .form-control,
+
+.contact-form-card .form-select{
+
+    border:2px solid #E5E7EB;
+
+    border-radius:15px;
+
+    padding:16px 18px;
 
     transition:var(--transition);
 
-    height:100%;
+    box-shadow:none;
 
 }
 
-.contact-card:hover{
+.contact-form-card .form-control:focus,
 
-    transform:translateY(-10px);
+.contact-form-card .form-select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(0,154,68,.10);
+
+}
+
+.contact-form-card textarea{
+
+    resize:none;
+
+}
+
+.contact-form-card .btn{
+
+    min-width:220px;
+
+}
+/*==================================================
+            FINAL CALL TO ACTION
+====================================================*/
+
+.contact-cta{
+
+    padding:90px 0;
+
+    background:#F8FAFC;
+
+}
+
+.cta-card{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--primary-dark)
+
+    );
+
+    border-radius:35px;
+
+    padding:70px;
+
+    color:#ffffff;
+
+    overflow:hidden;
+
+    position:relative;
 
     box-shadow:var(--shadow-lg);
 
 }
 
-.contact-card i{
+.cta-card::before{
 
-    width:70px;
+    content:"";
 
-    height:70px;
+    position:absolute;
 
-    display:flex;
+    top:-120px;
 
-    align-items:center;
+    right:-120px;
 
-    justify-content:center;
+    width:260px;
 
-    background:rgba(0,154,68,.10);
+    height:260px;
 
-    color:var(--primary);
+    border-radius:50%;
 
-    border-radius:20px;
+    background:rgba(255,255,255,.08);
 
-    font-size:2rem;
+}
+
+.cta-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:50px;
+
+    margin-bottom:20px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.cta-card h2{
+
+    color:#fff;
 
     margin-bottom:20px;
 
 }
 
-.contact-card h3{
-
-    margin-bottom:12px;
-
-}
-
-.contact-card p{
-
-    margin-bottom:8px;
-
-}
-
-.contact-card a{
-
-    color:var(--primary);
-
-    font-weight:600;
-
-}
-
-
-/*=========================================
-            CONTACT FORM
-=========================================*/
-
-.contact-form{
-
-    background:#fff;
-
-    padding:45px;
-
-    border-radius:30px;
-
-    box-shadow:var(--shadow-md);
-
-}
-
-.contact-form .form-control{
-
-    border:2px solid var(--border);
-
-    border-radius:16px;
-
-    padding:16px;
-
-    font-size:1rem;
-
-    transition:var(--transition);
-
-}
-
-.contact-form .form-control:focus{
-
-    border-color:var(--primary);
-
-    box-shadow:0 0 0 4px rgba(0,154,68,.12);
-
-}
-
-.contact-form textarea{
-
-    min-height:180px;
-
-    resize:vertical;
-
-}
-
-
-/*=========================================
-            BUSINESS HOURS
-=========================================*/
-
-.business-hours{
-
-    background:#fff;
-
-    border-radius:24px;
-
-    padding:35px;
-
-    box-shadow:var(--shadow-sm);
-
-}
-
-.business-hours ul{
-
-    list-style:none;
-
-    padding:0;
-
-    margin:0;
-
-}
-
-.business-hours li{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:14px 0;
-
-    border-bottom:1px solid #eee;
-
-}
-
-.business-hours li:last-child{
-
-    border:none;
-
-}
-
-
-/*=========================================
-            SOCIAL LINKS
-=========================================*/
-
-.social-links{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:15px;
-
-    margin-top:30px;
-
-}
-
-.social-links a{
-
-    width:55px;
-
-    height:55px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:#EEF8F2;
-
-    color:var(--primary);
-
-    border-radius:50%;
-
-    font-size:1.3rem;
-
-    transition:var(--transition);
-
-}
-
-.social-links a:hover{
-
-    background:var(--primary);
-
-    color:#fff;
-
-    transform:translateY(-5px);
-
-}
-
-
-/*=========================================
-            GOOGLE MAP
-=========================================*/
-
-.map-container{
-
-    overflow:hidden;
-
-    border-radius:30px;
-
-    box-shadow:var(--shadow-md);
-
-    margin-top:60px;
-
-}
-
-.map-container iframe{
-
-    width:100%;
-
-    height:450px;
-
-    border:none;
-
-}
-
-
-/*=========================================
-            QUICK RESPONSE BOX
-=========================================*/
-
-.response-box{
-
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--primary-dark)
-    );
-
-    color:#fff;
-
-    padding:45px;
-
-    border-radius:30px;
-
-    text-align:center;
-
-}
-
-.response-box h2{
-
-    color:#fff;
-
-}
-
-.response-box p{
+.cta-card p{
 
     color:rgba(255,255,255,.92);
 
+    line-height:1.9;
+
 }
 
+.cta-highlights{
 
-/*=========================================
-            MOBILE
-=========================================*/
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.cta-highlights div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:500;
+
+}
+
+.cta-highlights i{
+
+    color:#fff;
+
+}
+
+.cta-contact-box{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+}
+
+.cta-contact-box i{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta-contact-box h4{
+
+    color:#fff;
+
+}
+
+.cta-contact-box p{
+
+    margin:20px 0;
+
+}
+/*==================================================
+                RESPONSIVE
+====================================================*/
+
+@media(max-width:991px){
+
+.contact-form-card{
+
+padding:35px;
+
+}
+
+.cta-card{
+
+padding:45px;
+
+text-align:center;
+
+}
+
+.cta-highlights{
+
+grid-template-columns:1fr;
+
+}
+
+.cta-contact-box{
+
+margin-top:40px;
+
+}
+
+}
 
 @media(max-width:768px){
 
-.contact-form{
+.contact-form-section,
+
+.contact-cta{
+
+padding:70px 0;
+
+}
+
+.contact-form-card{
+
+padding:25px;
+
+}
+
+.cta-card{
+
+padding:30px 25px;
+
+}
+
+.cta-contact-box{
 
 padding:30px;
-
-}
-
-.business-hours{
-
-margin-top:30px;
-
-}
-
-.map-container iframe{
-
-height:300px;
-
-}
-
-.social-links{
-
-justify-content:center;
-
-}
-
-.response-box{
-
-padding:30px 20px;
 
 }
 
